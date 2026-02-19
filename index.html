@@ -2,102 +2,25 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Primera Página</title>
-
-  <style>
-    /* ===== RESET ===== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    /* ===== BODY ===== */
-    body {
-      height: 100vh;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* ===== CARD ===== */
-    .card {
-      background: white;
-      padding: 30px;
-      width: 320px;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-    }
-
-    h1 {
-      margin-bottom: 10px;
-      color: #333;
-    }
-
-    p {
-      color: #666;
-      margin-bottom: 20px;
-    }
-
-    /* ===== BUTTON ===== */
-    button {
-      border: none;
-      padding: 12px 20px;
-      border-radius: 10px;
-      background: #667eea;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background: #5563d6;
-    }
-
-    .mensaje {
-      margin-top: 15px;
-      font-weight: bold;
-      color: #444;
-      opacity: 0;
-      transition: opacity 0.4s;
-    }
-
-    .mostrar {
-      opacity: 1;
-    }
-  </style>
+  <title>Mi Página Web</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
   <div class="card">
     <h1>Hola 👋</h1>
-    <p>Esta es una página simple con HTML, CSS y JavaScript.</p>
+    <p>Esta página usa HTML, CSS y JavaScript separados.</p>
 
-    <button onclick="mostrarMensaje()">
+    <button id="btnMensaje">
       Haz clic aquí
     </button>
 
     <div id="mensaje" class="mensaje">
-      🚀 ¡Ya estás usando JavaScript!
+      🚀 ¡JavaScript funcionando correctamente!
     </div>
   </div>
 
-  <script>
-    function mostrarMensaje() {
-      const mensaje = document.getElementById("mensaje");
-      mensaje.classList.toggle("mostrar");
-    }
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
