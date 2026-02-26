@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEV 2 - Navbar Behavior & Active Link</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Base (del proyecto principal) -->
+  <link rel="stylesheet" href="/hv/dev2/style.css">
+  
+  <!-- CSS de DEV 2 -->
+  <link rel="stylesheet" href="navbar-behavior.css">
+  <link rel="stylesheet" href="active-link-highlight.css">
+  <link rel="stylesheet" href="cv-section-dev2.css">
+</head>
+<body>
+
+  <!-- Nota: Esta es la sección de CV que se agregará al HTML principal -->
+  <!-- El HTML principal NO se modifica, solo se agregan los scripts y CSS -->
+  
+  <!-- NUEVA SECCIÓN: HOJA DE VIDA DEV 2 -->
+  <section class="cv-section-dev2" id="cv-dev2">
+    <div class="cv-wrapper">
+      
+      <!-- Header del perfil -->
+      <div class="cv-profile-header">
+        <h2 class="cv-profile-name">María Rodríguez López</h2>
+        <p class="cv-profile-title">Desarrolladora Full Stack | Especialista en UX/UI</p>
+        <p class="cv-profile-bio">
+          Apasionada por crear experiencias digitales excepcionales. 
+          Con más de 3 años de experiencia desarrollando aplicaciones web modernas 
+          y centradas en el usuario.
+        </p>
+      </div>
+
+      <!-- Grid de información -->
+      <div class="cv-grid">
+        
+        <!-- Información de Contacto -->
+        <div class="cv-section-card">
+          <h3 class="cv-section-title">
+            <span class="cv-section-icon">📞</span>
+            Contacto
+          </h3>
+          <ul class="cv-contact-list">
+            <li class="cv-contact-item">
+              <span class="cv-contact-icon">📧</span>
+              <span>maria.rodriguez@email.com</span>
+            </li>
+            <li class="cv-contact-item">
+              <span class="cv-contact-icon">📱</span>
+              <span>+57 310 456 7890</span>
+            </li>
+            <li class="cv-contact-item">
+              <span class="cv-contact-icon">📍</span>
+              <span>Medellín, Colombia</span>
+            </li>
+            <li class="cv-contact-item">
+              <span class="cv-contact-icon">🔗</span>
+              <span>linkedin.com/in/mariarodriguez</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Formación Académica -->
+        <div class="cv-section-card">
+          <h3 class="cv-section-title">
+            <span class="cv-section-icon">🎓</span>
+            Formación
+          </h3>
+          
+          <div class="cv-item">
+            <div class="cv-item-title">Ingeniería de Software</div>
+            <div class="cv-item-subtitle">Universidad de Antioquia</div>
+            <div class="cv-item-date">2017 - 2022</div>
+          </div>
+
+          <div class="cv-item">
+            <div class="cv-item-title">UX/UI Design Professional</div>
+            <div class="cv-item-subtitle">Coursera - Google</div>
+            <div class="cv-item-date">2023</div>
+          </div>
+
+          <div class="cv-item">
+            <div class="cv-item-title">Advanced React Patterns</div>
+            <div class="cv-item-subtitle">Frontend Masters</div>
+            <div class="cv-item-date">2024</div>
+          </div>
+        </div>
+
+        <!-- Experiencia Profesional -->
+        <div class="cv-section-card">
+          <h3 class="cv-section-title">
+            <span class="cv-section-icon">💼</span>
+            Experiencia
+          </h3>
+          
+          <div class="cv-item">
+            <div class="cv-item-title">Full Stack Developer</div>
+            <div class="cv-item-subtitle">Innovation Labs</div>
+            <div class="cv-item-date">2023 - Presente</div>
+            <p class="cv-item-description">
+              Desarrollo de aplicaciones web con React, Node.js y MongoDB. 
+              Liderazgo en implementación de mejores prácticas de UX.
+            </p>
+          </div>
+
+          <div class="cv-item">
+            <div class="cv-item-title">Frontend Developer</div>
+            <div class="cv-item-subtitle">WebDev Studio</div>
+            <div class="cv-item-date">2022 - 2023</div>
+            <p class="cv-item-description">
+              Creación de interfaces responsivas y accesibles. 
+              Optimización de rendimiento web.
+            </p>
+          </div>
+        </div>
+
+        <!-- Habilidades Técnicas -->
+        <div class="cv-section-card">
+          <h3 class="cv-section-title">
+            <span class="cv-section-icon">⚡</span>
+            Habilidades
+          </h3>
+          <div class="cv-skills-container">
+            <span class="cv-skill-badge">React.js</span>
+            <span class="cv-skill-badge">Node.js</span>
+            <span class="cv-skill-badge">TypeScript</span>
+            <span class="cv-skill-badge">MongoDB</span>
+            <span class="cv-skill-badge">Figma</span>
+            <span class="cv-skill-badge">Git</span>
+            <span class="cv-skill-badge">CSS3</span>
+            <span class="cv-skill-badge">REST APIs</span>
+            <span class="cv-skill-badge">Agile</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Repositorios -->
+      <div class="cv-section-card" style="margin-top: 25px;">
+        <h3 class="cv-section-title">
+          <span class="cv-section-icon">🚀</span>
+          Proyectos y Repositorios
+        </h3>
+        <div class="cv-repos">
+          <a href="https://github.com/mariarodriguez/react-dashboard" target="_blank" class="cv-repo-btn">
+            <span class="cv-repo-icon">📊</span>
+            <span class="cv-repo-text">React Dashboard</span>
+          </a>
+          <a href="https://github.com/mariarodriguez/ecommerce-mern" target="_blank" class="cv-repo-btn">
+            <span class="cv-repo-icon">🛍️</span>
+            <span class="cv-repo-text">E-commerce MERN</span>
+          </a>
+          <a href="https://github.com/mariarodriguez/ui-components" target="_blank" class="cv-repo-btn">
+            <span class="cv-repo-icon">🎨</span>
+            <span class="cv-repo-text">UI Components</span>
+          </a>
+          <a href="https://github.com/mariarodriguez/portfolio-v2" target="_blank" class="cv-repo-btn">
+            <span class="cv-repo-icon">💼</span>
+            <span class="cv-repo-text">Portfolio</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Scripts Base -->
+  <script src="../js/app.js"></script>
+  
+  <!-- Scripts de DEV 2 -->
+  <script src="navbar-behavior.js"></script>
+  <script src="active-link-highlight.js"></script>
+
+</body>
+</html>
