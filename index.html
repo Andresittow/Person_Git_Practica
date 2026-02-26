@@ -1,103 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Primera Página</title>
-
-  <style>
-    /* ===== RESET ===== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    /* ===== BODY ===== */
-    body {
-      height: 100vh;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* ===== CARD ===== */
-    .card {
-      background: white;
-      padding: 30px;
-      width: 320px;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-    }
-
-    h1 {
-      margin-bottom: 10px;
-      color: #333;
-    }
-
-    p {
-      color: #666;
-      margin-bottom: 20px;
-    }
-
-    /* ===== BUTTON ===== */
-    button {
-      border: none;
-      padding: 12px 20px;
-      border-radius: 10px;
-      background: #667eea;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background: #5563d6;
-    }
-
-    .mensaje {
-      margin-top: 15px;
-      font-weight: bold;
-      color: #444;
-      opacity: 0;
-      transition: opacity 0.4s;
-    }
-
-    .mostrar {
-      opacity: 1;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WorkspacePro</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
 </head>
-
 <body>
 
-  <div class="card">
-    <h1>Hola 👋</h1>
-    <p>Esta es una página simple con HTML, CSS y JavaScript.</p>
+<header class="header">
+<nav class="nav container">
+<div class="logo">WorkspacePro</div>
+<button class="menu-toggle" id="menuToggle">☰</button>
+<ul class="nav-menu" id="navMenu">
+<li><a href="#beneficios">Beneficios</a></li>
+<li><a href="#caracteristicas">Características</a></li>
+<li><a href="#testimonios">Testimonios</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+</header>
 
-    <button onclick="mostrarMensaje()">
-      Haz clic aquí
-    </button>
+<section class="hero">
+<div class="container hero-content">
 
-    <div id="mensaje" class="mensaje">
-      🚀 ¡Ya estás usando JavaScript!
-    </div>
-  </div>
+<div class="hero-text">
+<h1>Un solo workspace. Cero caos.</h1>
+<p>Organiza tus proyectos, equipo y tareas en una sola plataforma moderna.</p>
+<button class="cta-button" id="ctaButton">Comenzar gratis</button>
+</div>
 
-  <script>
-    function mostrarMensaje() {
-      const mensaje = document.getElementById("mensaje");
-      mensaje.classList.toggle("mostrar");
-    }
-  </script>
+<div class="hero-image">
+<img src="img/hero.png" alt="Producto workspace">
+</div>
+
+</div>
+</section>
+
+<section class="benefits" id="beneficios">
+<div class="container">
+
+<h2>Beneficios</h2>
+
+<div class="grid">
+
+<article class="card">
+<h3>Organización completa</h3>
+<p>Centraliza todo tu trabajo en un solo lugar.</p>
+</article>
+
+<article class="card">
+<h3>Mayor productividad</h3>
+<p>Mejora el rendimiento de tu equipo.</p>
+</article>
+
+<article class="card">
+<h3>Fácil de usar</h3>
+<p>Interfaz simple e intuitiva.</p>
+</article>
+
+</div>
+
+</div>
+</section>
+
+<section class="features" id="caracteristicas">
+<div class="container">
+
+<h2>Características</h2>
+
+<div class="grid">
+
+<article class="card">
+<h3>Gestión de tareas</h3>
+</article>
+
+<article class="card">
+<h3>Trabajo colaborativo</h3>
+</article>
+
+<article class="card">
+<h3>Automatización inteligente</h3>
+</article>
+
+</div>
+
+</div>
+</section>
+
+<section class="testimonials" id="testimonios">
+<div class="container">
+
+<h2>Testimonios</h2>
+
+<article class="testimonial">
+<p>"Esta plataforma mejoró completamente nuestra productividad."</p>
+<h3>Usuario satisfecho</h3>
+</article>
+
+</div>
+</section>
+
+<section class="contact" id="contacto">
+<div class="container">
+
+<h2>Contacto</h2>
+
+<form id="contactForm">
+
+<input type="text" id="nameInput" placeholder="Nombre">
+<input type="email" id="emailInput" placeholder="Correo electrónico">
+<textarea id="messageInput" placeholder="Mensaje"></textarea>
+
+<button type="submit">Enviar</button>
+
+<p id="formMessage"></p>
+
+</form>
+
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+
+<p>© 2026 WorkspacePro</p>
+
+<div class="social">
+<a href="#">Facebook</a>
+<a href="#">Twitter</a>
+<a href="#">LinkedIn</a>
+</div>
+
+</div>
+</footer>
+
+<script src="js/app.js"></script>
 
 </body>
 </html>
