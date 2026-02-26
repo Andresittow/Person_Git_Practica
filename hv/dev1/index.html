@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEV 1 - Dark Mode & Scroll Animations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Base (del proyecto principal) -->
+  <link rel="stylesheet" href="../main.css">
+  
+  <!-- CSS de DEV 1 -->
+  <link rel="stylesheet" href="dark-mode.css">
+  <link rel="stylesheet" href="scroll-animations.css">
+  <link rel="stylesheet" href="cv-section.css">
+</head>
+<body>
+
+  <!-- Nota: Esta es la sección de CV que se agregará al HTML principal -->
+  <!-- El HTML principal NO se modifica, solo se agregan los scripts y CSS -->
+  
+  <!-- NUEVA SECCIÓN: HOJA DE VIDA DEV 1 -->
+  <section class="cv-section" id="cv-dev1">
+    <div class="cv-container">
+      
+      <div class="cv-header">
+        <h2>Juan Pérez García</h2>
+        <p class="subtitle">Desarrollador Frontend | Especialista en JavaScript</p>
+      </div>
+
+      <div class="cv-content">
+        
+        <!-- Información Personal -->
+        <div class="cv-card">
+          <h3>📋 Información Personal</h3>
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <span>juan.perez@email.com</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📱</span>
+              <span>+57 300 123 4567</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <span>Bogotá, Colombia</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🌐</span>
+              <span>linkedin.com/in/juanperez</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formación Académica -->
+        <div class="cv-card">
+          <h3>🎓 Formación Académica</h3>
+          
+          <div class="education-item">
+            <div class="education-title">Ingeniería de Sistemas</div>
+            <div class="education-institution">Universidad Nacional de Colombia</div>
+            <div class="education-date">2018 - 2023</div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-title">Certificación Frontend Developer</div>
+            <div class="education-institution">Platzi</div>
+            <div class="education-date">2022</div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-title">JavaScript Avanzado</div>
+            <div class="education-institution">Udemy</div>
+            <div class="education-date">2023</div>
+          </div>
+        </div>
+
+        <!-- Habilidades -->
+        <div class="cv-card">
+          <h3>💻 Habilidades Técnicas</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Responsive</span>
+            <span class="skill-tag">UI/UX</span>
+          </div>
+        </div>
+
+        <!-- Experiencia -->
+        <div class="cv-card">
+          <h3>💼 Experiencia Profesional</h3>
+          
+          <div class="education-item">
+            <div class="education-title">Frontend Developer</div>
+            <div class="education-institution">Tech Solutions S.A.</div>
+            <div class="education-date">2023 - Presente</div>
+            <p style="color: var(--text-secondary); margin-top: 8px; font-size: 0.95rem;">
+              Desarrollo de interfaces web modernas con React y JavaScript. 
+              Implementación de diseños responsive y optimización de rendimiento.
+            </p>
+          </div>
+
+          <div class="education-item">
+            <div class="education-title">Junior Web Developer</div>
+            <div class="education-institution">Digital Agency</div>
+            <div class="education-date">2022 - 2023</div>
+            <p style="color: var(--text-secondary); margin-top: 8px; font-size: 0.95rem;">
+              Creación de landing pages y sitios web corporativos.
+              Colaboración en proyectos de e-commerce.
+            </p>
+          </div>
+        </div>
+
+        <!-- Repositorios -->
+        <div class="cv-card">
+          <h3>🚀 Repositorios y Proyectos</h3>
+          <div class="repo-links">
+            <a href="https://github.com/juanperez/portfolio" target="_blank" class="repo-link">
+              Portfolio Personal
+            </a>
+            <a href="https://github.com/juanperez/ecommerce-app" target="_blank" class="repo-link">
+              E-commerce App
+            </a>
+            <a href="https://github.com/juanperez/weather-dashboard" target="_blank" class="repo-link">
+              Weather Dashboard
+            </a>
+            <a href="https://github.com/juanperez/task-manager" target="_blank" class="repo-link">
+              Task Manager
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts Base -->
+  <script src="../js/app.js"></script>
+  
+  <!-- Scripts de DEV 1 -->
+  <script src="dark-mode.js"></script>
+  <script src="scroll-animations.js"></script>
+
+</body>
+</html>
