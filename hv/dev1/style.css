@@ -1,0 +1,256 @@
+/* ===================================
+   DEV 1 - SECCIÓN HOJA DE VIDA
+   Diseño profesional para CV
+   =================================== */
+
+.cv-section {
+  padding: 80px 0;
+  background: var(--bg-secondary);
+  transition: var(--transition-theme);
+}
+
+.cv-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cv-header {
+  text-align: center;
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.cv-header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cv-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.cv-header .subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.cv-content {
+  display: grid;
+  gap: 40px;
+}
+
+.cv-card {
+  background: var(--bg-primary);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--primary-color);
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease;
+}
+
+.cv-card.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.cv-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateX(5px);
+}
+
+.cv-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cv-card h3::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.5);
+  }
+}
+
+.cv-info-item {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.cv-info-item::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.cv-info-item strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.cv-info-item span {
+  color: var(--text-secondary);
+}
+
+/* Formación académica */
+.education-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  transition: var(--transition-theme);
+}
+
+.education-item:hover {
+  background: var(--bg-card);
+}
+
+.education-title {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.education-institution {
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.education-date {
+  color: var(--text-tertiary);
+  font-size: 0.9rem;
+}
+
+/* Enlaces a repositorios */
+.repo-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.repo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.repo-link:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.repo-link::before {
+  content: '⚡';
+  font-size: 1.2rem;
+}
+
+/* Habilidades */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.skill-tag {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 2px solid var(--border-color);
+  transition: var(--transition-theme);
+}
+
+.skill-tag:hover {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+/* Datos de contacto */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-secondary);
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cv-header h2 {
+    font-size: 2rem;
+  }
+  
+  .cv-card {
+    padding: 20px;
+  }
+  
+  .repo-links {
+    flex-direction: column;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
