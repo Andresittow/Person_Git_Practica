@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEV 3 - Form Validation & Animation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Base (del proyecto principal) -->
+  <link rel="stylesheet" href="/hv/dev3/style.css">
+  
+  <!-- CSS de DEV 3 -->
+  <link rel="stylesheet" href="form-validation.css">
+  <link rel="stylesheet" href="form-animation.css">
+  <link rel="stylesheet" href="cv-section-dev3.css">
+</head>
+<body>
+
+  <!-- Nota: Esta es la sección de CV que se agregará al HTML principal -->
+  <!-- El HTML principal NO se modifica, solo se agregan los scripts y CSS -->
+  
+  <!-- NUEVA SECCIÓN: HOJA DE VIDA DEV 3 -->
+  <section class="cv-section-dev3" id="cv-dev3">
+    <div class="cv-container-dev3">
+      
+      <!-- Card Principal del Perfil -->
+      <div class="cv-main-card">
+        <div class="cv-avatar">👨‍💻</div>
+        <h2 class="cv-name-dev3">Carlos Méndez Silva</h2>
+        <p class="cv-role">Backend Developer | Especialista en Node.js & Databases</p>
+        <p class="cv-summary">
+          Desarrollador backend con 4 años de experiencia en arquitectura de APIs RESTful,
+          microservicios y gestión de bases de datos. Apasionado por escribir código limpio,
+          eficiente y escalable.
+        </p>
+        
+        <div class="quick-contact">
+          <a href="mailto:carlos.mendez@email.com" class="contact-badge">
+            📧 carlos.mendez@email.com
+          </a>
+          <a href="tel:+573201234567" class="contact-badge">
+            📱 +57 320 123 4567
+          </a>
+          <a href="#" class="contact-badge">
+            📍 Cali, Colombia
+          </a>
+          <a href="#" class="contact-badge">
+            💼 LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- Grid de Información -->
+      <div class="cv-info-grid">
+        
+        <!-- Experiencia Profesional -->
+        <div class="info-card-dev3">
+          <div class="card-header-dev3">
+            <span class="card-icon-dev3">💼</span>
+            <h3 class="card-title-dev3">Experiencia</h3>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-title">Senior Backend Developer</div>
+            <div class="timeline-company">CloudTech Solutions</div>
+            <div class="timeline-date">2022 - Presente</div>
+            <p class="timeline-desc">
+              Diseño e implementación de microservicios con Node.js y MongoDB.
+              Liderazgo técnico en proyectos de migración a arquitectura cloud.
+              Optimización de consultas SQL mejorando performance en 40%.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">Backend Developer</div>
+            <div class="timeline-company">StartupXYZ</div>
+            <div class="timeline-date">2020 - 2022</div>
+            <p class="timeline-desc">
+              Desarrollo de APIs RESTful con Express.js.
+              Integración de servicios de terceros (Stripe, SendGrid, AWS).
+              Implementación de sistemas de autenticación y autorización.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">Junior Developer</div>
+            <div class="timeline-company">DevHouse</div>
+            <div class="timeline-date">2019 - 2020</div>
+            <p class="timeline-desc">
+              Mantenimiento y desarrollo de aplicaciones web con MERN stack.
+              Colaboración en proyectos de automatización de procesos.
+            </p>
+          </div>
+        </div>
+
+        <!-- Formación Académica -->
+        <div class="info-card-dev3">
+          <div class="card-header-dev3">
+            <span class="card-icon-dev3">🎓</span>
+            <h3 class="card-title-dev3">Formación</h3>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-title">Ingeniería en Sistemas</div>
+            <div class="timeline-company">Universidad del Valle</div>
+            <div class="timeline-date">2015 - 2019</div>
+            <p class="timeline-desc">
+              Graduado con honores. Tesis: "Optimización de Bases de Datos NoSQL"
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">AWS Certified Solutions Architect</div>
+            <div class="timeline-company">Amazon Web Services</div>
+            <div class="timeline-date">2023</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">Node.js Advanced Patterns</div>
+            <div class="timeline-company">Udemy</div>
+            <div class="timeline-date">2022</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">MongoDB University</div>
+            <div class="timeline-company">MongoDB Inc.</div>
+            <div class="timeline-date">2021</div>
+          </div>
+        </div>
+
+        <!-- Habilidades Técnicas -->
+        <div class="info-card-dev3">
+          <div class="card-header-dev3">
+            <span class="card-icon-dev3">⚡</span>
+            <h3 class="card-title-dev3">Habilidades</h3>
+          </div>
+          
+          <div class="skill-item-dev3">
+            <div class="skill-header">
+              <span class="skill-name">Node.js / Express</span>
+              <span class="skill-level">95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--skill-width: 95%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-dev3">
+            <div class="skill-header">
+              <span class="skill-name">MongoDB / PostgreSQL</span>
+              <span class="skill-level">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--skill-width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-dev3">
+            <div class="skill-header">
+              <span class="skill-name">Docker / Kubernetes</span>
+              <span class="skill-level">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--skill-width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-dev3">
+            <div class="skill-header">
+              <span class="skill-name">AWS / Cloud Services</span>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--skill-width: 80%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-dev3">
+            <div class="skill-header">
+              <span class="skill-name">Python / Django</span>
+              <span class="skill-level">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--skill-width: 75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-dev3">
+            <div class="skill-header">
+              <span class="skill-name">GraphQL</span>
+              <span class="skill-level">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--skill-width: 70%"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Repositorios -->
+      <div class="info-card-dev3" style="margin-top: 25px;">
+        <div class="card-header-dev3">
+          <span class="card-icon-dev3">🚀</span>
+          <h3 class="card-title-dev3">Proyectos y Repositorios</h3>
+        </div>
+        
+        <div class="repos-grid">
+          <a href="https://github.com/carlosmendez/api-gateway" target="_blank" class="repo-card">
+            <div class="repo-icon">🌐</div>
+            <div class="repo-name">API Gateway</div>
+            <p class="repo-desc">Microservicio de gateway con autenticación JWT y rate limiting</p>
+          </a>
+
+          <a href="https://github.com/carlosmendez/ecommerce-api" target="_blank" class="repo-card">
+            <div class="repo-icon">🛒</div>
+            <div class="repo-name">E-commerce API</div>
+            <p class="repo-desc">REST API completa para tienda online con Node.js y MongoDB</p>
+          </a>
+
+          <a href="https://github.com/carlosmendez/chat-server" target="_blank" class="repo-card">
+            <div class="repo-icon">💬</div>
+            <div class="repo-name">Chat Server</div>
+            <p class="repo-desc">Servidor de chat en tiempo real con Socket.io y Redis</p>
+          </a>
+
+          <a href="https://github.com/carlosmendez/task-scheduler" target="_blank" class="repo-card">
+            <div class="repo-icon">⏰</div>
+            <div class="repo-name">Task Scheduler</div>
+            <p class="repo-desc">Sistema de programación de tareas con Bull Queue</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Scripts Base -->
+  <script src="../js/app.js"></script>
+  
+  <!-- Scripts de DEV 3 -->
+  <script src="form-validation.js"></script>
+  <script src="form-animation.js"></script>
+
+  <script>
+    // Animación de barras de progreso al hacer scroll
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.skill-item-dev3').forEach(skill => {
+      skillObserver.observe(skill);
+    });
+  </script>
+
+</body>
+</html>
